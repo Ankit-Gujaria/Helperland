@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/FAQs.css">
+  <title>FAQs</title>
+</head>
+
+<body>
+  <div class="faqs">
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background: #525252;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg class="logo-nav" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="54">
+            <image width="73" height="54"
+              xlink:href="data:img/png;base64,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" />
+          </svg></a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class=" sp-btn" href="#">Book now</a>
+            </li>
+            <li class="nav-item">
+              <a class=" sp-btn" href="#" id="price">Prices & services</a>
+            </li>
+            <li class="nav-item">
+              <a class=" header-nav" href="#">Warranty</a>
+            </li>
+            <li class="nav-item">
+              <a class=" header-nav" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class=" header-nav" href="#">Contact </a>
+            </li>
+            <li class="nav-item">
+              <a class=" sp-btn" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class=" sp-btn" href="#">Become a
+                Helper</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="image">
+      <img src="img/group-16@3x.png" alt="">
+    </div>
+
+    <div class="heading">
+      <h1>FAQs</h1>
+      <div class="heading-underline">
+        <span></span>
+        <img src="./img/forma-1-copy-5.png" alt="">
+        <span></span>
+      </div>
+      <p>Whether you are Customer or Service provider, </p>
+      <p>We have tried our best to solve all your queries and questions.</p>
+    </div>
+    <div>
+      <div class="select">
+        <button id="left" class="current-section">FOR CUSTOMER</button>
+        <button id="right">FOR SERVICE PROVIDER</button>
+      </div>
+      <div class="box customer-box">
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" id="item-1" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" id="item-2" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+
+      </div>
+      <div class="box service-box">
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" id="item-1" alt="">
+            <h5> ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" id="item-2" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+        <div class="box-item">
+          <div>
+            <img src="./img/down-arrow.png" class="down" alt="">
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eligendi laborum earum expedita dicta,
+              dignissimos repellat tenetur quis maxime.</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus officia officiis ratione, a,
+            repellat magni consequuntur beatae est fugiat temporibus rerum cumque tempore adipisci voluptatem recusandae
+            aperiam ea et atque illum delectus assumenda at voluptatum amet? Cum ea obcaecati officia ipsum. Nulla
+            laborum reprehenderit maxime fugit sit odit id rerum, aliquid, saepe quaerat consequatur soluta ut veniam
+            quidem repellendus ipsum illo sunt alias officia. Necessitatibus excepturi laboriosam inventore, illo
+            aliquid numquam maiores fugit ducimus magni natus voluptates perferendis, suscipit ullam cupiditate qui
+            dignissimos, possimus maxime atque sit sint harum amet repellendus veniam. Nostrum veritatis repellat facere
+            dignissimos tenetur non.</p>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+    <div class="text-center newsletter p-5">
+      <h2>GET OUR NEWSLETTER</h2>
+      <form action="#">
+        <input type="text" class="form-email" placeholder="YOUR EMAIL">
+        <button type="submit" class="btn-submit mt-2">Submit</button>
+      </form>
+    </div>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row justify-content-center py-4 d-flex align-content-center">
+          <div class="col-lg-2 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="92">
+              <image width="120" height="92"
+                xlink:href="data:img/png;base64,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" />
+            </svg>
+          </div>
+          <div class="col-lg-8">
+            <div class="footer-navbar text-center p-4">
+              <a class="" href="#">HOME</a>
+              <a class="" href="#">ABOUT</a>
+              <a class="" href="#">TESTIMONIALS</a>
+              <a class="" href="#">FAQS</a>
+              <a class="" href="#">INSURANCE</a>
+              <a class="" href="#">POLICY</a>
+              <a class="" href="#">IMPRESSUM</a>
+            </div>
+          </div>
+          <div class="col-lg-2 py-4 text-center">
+            <a href="#"><img src="img/fb.svg" alt="fb" class="px-2"></a>
+            <a href="#"><img src="img/insta.svg" alt="insta" class="px-2"></a>
+          </div>
+        </div>
+
+        <div class="container">
+          <hr style="color: #f1f1f1;">
+        </div>
+
+        <section class="privacy" id="privacy">
+          <div class="row">
+            <div class="col-lg-12  d-flex justify-content-center align-items-center py-3">
+              <p>©2018 Helperland. All rights reserved. <a href="#" class="policy">Terms and Conditions |
+                  Privacy Policy</a></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./JS/faqs.js"></script>
+  
+</body>
+
+</html>
