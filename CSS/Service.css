@@ -332,20 +332,25 @@ form .form-a{
 
 .footer {
 	background-color: #111111;
+	
 }
-hr{
-	color:#f1f1f1;
+ .hr-line{ 
+  
+
 	width: 90%;
+	height: 2px;
 	margin-left: 6%;
 }
+
 .privacy {
 	background-color: #111111;
 	height: 64px;
+	
 }
 .privacy p {
 	font-size: 14px;
-	color: #f1f1f1;
-	margin: 0px;
+	color:#9ba0a3;
+	margin:0px;
 }
 .policy-txt {
 	display: flex;
@@ -356,10 +361,14 @@ hr{
 
 .policy {
 	text-decoration: none;
-	color:#f1f1f1;
+	color:#9ba0a3;
     margin-left: 5px;
 }
 
+a .px-1{
+	height: 20px;
+	width: 20px;
+}
 a .px-2{
 	height: 20px;
 	width: 40px;
