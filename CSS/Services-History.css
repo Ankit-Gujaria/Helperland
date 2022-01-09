@@ -47,7 +47,22 @@
         padding: auto;
     }
 }
-
+#notification{
+  border-left: 2px solid whitesmoke; 
+   border-right: 2px solid whitesmoke;
+    padding-left: 16px; 
+    padding-right:0px;
+}
+.notification-no{
+  position:relative;
+  z-index: 1;
+  bottom:9px;
+  right:7px ;
+  background: #ff1616;
+  font-size: 13.5px;
+  padding: 0px 5px;
+  border-radius: 50%;
+}
 /* navigation end*/
 
 /* username start*/
@@ -129,8 +144,13 @@
   
   }
     }
+
+    .vertical-nav ul{
+      width: 100%;
+   }
+
   .vertical-nav .nav-item {
-    height: 50px;
+    height: 55px;
     padding: 0px !important;
     margin: 0px!important;
     border-bottom: .8px solid #FFFFFF;
@@ -141,7 +161,7 @@
     color: #ffff;
     font-size: 18px;
     font-weight: normal;
-   
+    padding-top: 13px;
   
   }
   
