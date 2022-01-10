@@ -5,11 +5,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
+	
 }
 .home {
 	background-image: url(../img/group-35.png);
 	background-size: cover;
 	color: #ffffff;
+	width: 100%;
+
 }
 .header-nav {
 	text-decoration: none;
@@ -259,4 +262,36 @@
 	div.arrow {
 		display: none;
 	}
+}
+@media screen and (max-width: 1187px) {
+	
+	.header-nav {
+		
+		padding: 15px;
+		
+	}
+	.header-nav:hover {
+		
+		padding: 15px;
+	}
+	.heading-txt {
+		font-size: 50px;
+	}
+	
+	.sp-btn {
+	
+		padding: 7px 15px;
+		margin: 0px 5px;
+		
+	}
+	
+	}
+@media screen and (max-width:1190px) {
+    
+	.nav-item{
+		padding-top: 10px;
+		padding-bottom:10px ;
+	}
+   
+   
 }

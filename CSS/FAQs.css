@@ -262,7 +262,15 @@ h2{
       width: 150px;
     }
 }
-
+@media screen and (max-width: 991px) {
+    
+	.nav-item{
+		padding-top: 10px;
+		padding-bottom:10px ;
+	}
+   
+   
+}
 
 
 
