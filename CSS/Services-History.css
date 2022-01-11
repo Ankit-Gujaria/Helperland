@@ -296,7 +296,22 @@
 }
 .right-entry{
     display:inline-block;
-    float:right ;
+    float:right;
+}
+@media screen and (max-width:1055px) {
+  
+  .left-entry{
+    display:block;
+    color: #646464;
+    margin-left: 5px;
+}
+.right-entry{
+    display:block;
+    float:left;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+      
 }
 .right-entry span{
     border: 1px solid #e1e1e1;
