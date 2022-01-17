@@ -70,7 +70,12 @@
   margin-top: 8px;
 }
 
-
+.has-submenu{
+    background: #f2f4f5;
+}
+#sr-color{
+    color: #1fb6ff;
+}
 
 .um-head{
     margin-bottom: 10px;
