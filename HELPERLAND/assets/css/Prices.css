@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+
+/* price section start */
+
+.heading {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1 {
+    color: #4F4F4F;
+    font-size: 36px;
+}
+
+.heading-underline {
+    position: relative;
+    width: 164px;
+    height: 25px;
+    margin-bottom: 34px;
+}
+.heading-underline img {
+    position: absolute;
+    right: 69px;
+}
+.heading-underline span {
+    position: absolute;
+    height: 1px;
+    width: 62px;
+    background-color: #CCCCCC;
+    top:49%;
+}
+.heading-underline span:nth-child(1){
+    left: 0;
+}
+.heading-underline span:nth-child(3){
+    right: 0;
+}
+
+
+.prices .card{
+    border: 1px solid #1D7A8C;
+	width:50%;
+	margin-bottom: 50px;
+	
+	
+}
+.prices .card-header{
+    background: #1D7A8C;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+	height:59px;
+}
+.prices .card-title{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 28px;
+	margin-bottom: 35px;
+	color: #646464;
+	
+}
+.prices .card-title span{
+	font-size: 40px;
+	font-weight: 800;
+	color: #646464;
+}
+.prices .price-detail img{
+	width: 15px;
+}
+.prices .row{
+	margin-bottom: 0px;
+}
+.prices .row img{
+	width: 24px;
+	height: 24px;
+	padding-left:0px ;
+	padding-right:0px ;
+
+}
+.prices .row p{
+	font-size: 16px;
+	color: #646464;
+	margin-left: 9px;
+}
+
+.heading-underline-long{
+	margin-left: 10%;
+	width:80%;
+	height: 1px;
+    background:#e2dfdf;
+	
+}
+
+/* price section end */
+
+
+/* services section start */
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 108px;
+    height: 108px;
+    line-height: 90px;
+    border-radius: 50% !important;
+    border: solid 1px#B0C9CE !important;
+}
+.btn img{
+    padding-top: 30px;
+}
+
+.service {
+	margin-top: 14px;
+    letter-spacing: 0px;
+    color: #646464;
+    opacity: 1;
+    font-size: 16px;
+	font-weight: bolder;
+    
+}
+
+.container .service-time {
+    letter-spacing: 0px;
+    color:#1D7A8C;
+    opacity: 1;
+    font-size: 18px;
+	font-weight: 600;
+    margin-bottom: 56px;
+}
+.container .btn img{
+	width: 60%;
+	height: 70%;
+}
+
+
+/* services section end */
+
+
+
+/* cleaning section start */
+  
+
+.cleaning{
+	background: #F6F6F6;
+    padding-top: 70px;
+}
+.card-info{
+	background:#F6F6F6 !important;
+	border: #F6F6F6 !important;
+	padding-left: 0px;
+}
+.card-service {
+    margin-top: 42px;
+    padding-bottom: 81px;
+}
+
+.card-title {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #4F4F4F;
+    opacity: 1;
+    font-size: 20px;
+	font-weight: 600;
+	margin-left: 0px;
+   
+}
+
+.card-text {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #4F4F4F;
+    opacity: 1;
+    font-size: 16px;
+   
+}
+
+
+/* cleaning section end */
+
+
+
+/* card section start */
+
+
+
+.col-left {
+    text-align: end;
+}
+
+.col-right {
+    text-align: start;
+}
+
+.container .why-title {
+    letter-spacing: 0px;
+    color: #646464;
+    opacity: 1;
+    font-size: 20px;
+	font-weight:600 ;
+   
+}
+
+.why-text {
+    letter-spacing: 0px;
+    color: #bdbbbb;
+    opacity: 1;
+    font-size: 14px;
+	font-weight: 500;
+   
+}
+.container .center-img{
+
+	width:80%;
+	height: 80%;
+}
+
+/* card section start */
+
+
+
+
+
+
+
+
+
+
+.home-btn {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+.up-arrow {
+	width: 48px;
+	height: 48px;
+	background-color: #525252;
+	border-radius: 50%;
+	position: relative;
+	float: left;
+	margin: 0px 0px;
+}
+.up-pos {
+	position: absolute;
+	top: 37%;
+	left: 28%;
+}
+
+
+
+@media screen and (max-width: 1029px) {
+	.header-nav {
+		margin: 0px 2px;
+	}
+    .sp-btn{
+        margin: 0px 2px;
+    }
+
+}
