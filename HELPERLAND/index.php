@@ -1,8 +1,8 @@
 <?php
 
 
-$controller='';
-$function='';
+$controller='Helperland';
+$function='HomePage';
 $parameter='';
 
 
@@ -20,8 +20,8 @@ if(isset($_GET['parameter'])&&$_GET['parameter']!=''){
     $parameter=$_GET['parameter'];
 }
 
-if(file_exists('controller/'.$controller.'')){
-    include('controller/'.$controller.'');
+if(file_exists('controller/'.$controller.'controller')){
+    include('controller/'.$controller.'controller');
     $class=$controller.'controller';
     $obj=new $class();
 
