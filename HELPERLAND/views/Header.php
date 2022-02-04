@@ -10,6 +10,11 @@
      <link rel="stylesheet" href="../assets/css/Header.css">
 </head>
 <body>
+<?php
+   include("login.php");
+   include("ServiceproviderReg.php");
+?>
+
 <section class="nevigation">
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #525252; ">
@@ -42,10 +47,10 @@
           <a class=" header-nav" href="#">Contact </a>
         </li>
         <li class="nav-item">
-          <a class=" sp-btn" href="#">Login</a>
+          <a class=" sp-btn" href="#" data-toggle="modal" data-target="#exampleModal" >Login</a>
         </li>
         <li class="nav-item">
-          <a class=" sp-btn" href="#">Become a
+          <a class=" sp-btn" href="#" data-toggle="modal" data-target="#exampleModalCenter" >Become a
             Helper</a>
         </li>
 
