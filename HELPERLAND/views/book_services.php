@@ -41,39 +41,6 @@
 
 
 
-
-  <script>
-    $(document).ready(function() {
-      $("#btn1").click(function() {
-        $("#design").css("display", "none");
-        $("#instrument").css("display", "none");
-        $("#innovations").css("display", "none");
-        $("#pilot").css("display", "block");
-      });
-
-      $("#btn2").click(function() {
-        $("#pilot").css("display", "none");
-        $("#instrument").css("display", "none");
-        $("#innovations").css("display", "none");
-        $("#design").css("display", "block");
-      });
-
-      $("#btn3").click(function() {
-        $("#design").css("display", "none");
-        $("#pilot").css("display", "none");
-        $("#innovations").css("display", "none");
-        $("#instrument").css("display", "block");
-      });
-
-      $("#btn4").click(function() {
-        $("#design").css("display", "none");
-        $("#instrument").css("display", "none");
-        $("#pilot").css("display", "none");
-        $("#innovations").css("display", "block");
-      });
-    });
-  </script>
-
   <?php
   include("Get_news.php");
   ?>
