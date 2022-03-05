@@ -14,9 +14,9 @@
   include("forgotpassword.php");
 
 ?>
-    <!--Login Modal -->
+ <!--Login Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" style="width:300px" role="document">
+  <div class="modal-dialog modal-dialog-centered" style="width:400px" role="document">
     <div class="modal-content">
       <div class="modal-header" style="border-bottom:none;" >
         <h4 class="modal-title" id="exampleModalLongTitle">Login to your account</h4>

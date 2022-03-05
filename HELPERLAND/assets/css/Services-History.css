@@ -171,7 +171,7 @@
   
 /*vertical navigation end*/
 
-/*table start*/ 
+/* Hestory table start*/ 
 
 .sh{
     color: #525252 !important;
@@ -189,7 +189,7 @@
    width: 70px;
    height: 34px;
    border-radius: 20px;
-   padding:px 7px;
+   padding:0px 7px;
    margin-bottom: 6px;
    font-size: 14px;
    margin-top: 6px;
@@ -353,55 +353,12 @@
 .entries{
   margin-right: 8px;
 }
-/*table end*/
+/* History table end*/
+
+/*Dashboard table start*/
+
+.Add_new {
+  float: right;
+}
 
 
-
-.footer-navbar a {
-	text-decoration: none;
-	color: white;
-	padding: 0px 10px;
-	font-size: 14px;
-	letter-spacing: 0px;
-}
-
-.footer {
-	background-color: #111111;
-	
-}
-.foot-item{
-    padding-top: 27px;
-    
-}
-.privacy {
-	background-color: #111111;
-	height: 64px;
-   
-	
-}
-.line{
-    background:#424242 ;
-}
-.privacy p {
-	font-size: 14px;
-	color:#9ba0a3;
-    margin-top:10px;
-    margin-bottom: auto;
-}
-
-.policy {
-	text-decoration: none;
-	color:#9ba0a3;
-    margin-left: 5px;
-}
-
-a .px-1{
-	height: 20px;
-	width: 20px;
-}
-a .px-2{
-	height: 20px;
-	width: 40px;
-}
-
-/* footer end*/

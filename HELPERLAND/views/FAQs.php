@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/CSS/FAQs.css">
+  <link rel="stylesheet" href="../assets/css/footer1.css">
   <title>FAQs</title>
 </head>
 
@@ -97,7 +98,7 @@
     </div>
    
    <?php
-    include('Footer.php');
+    include('Footer1.php');
    ?>
 
   <script src="../assets/js/faqs.js"></script>
